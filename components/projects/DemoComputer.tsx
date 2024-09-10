@@ -6,10 +6,15 @@ import { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations, useVideoTexture } from '@react-three/drei';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { Group } from 'three';
 
-const DemoComputer = (props) => {
-  const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/models/computer.glb');
+interface DemoComputerProps {
+  texture?: string;
+}
+
+const DemoComputer : React.FC<DemoComputerProps> = (props : any) => {
+  const group = useRef<Group>();
+  const { nodes, materials, animations } = useGLTF('/models/computer.glb') as any;
   const { actions } = useAnimations(animations, group);
 
   const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
@@ -20,12 +25,14 @@ const DemoComputer = (props) => {
     }
   }, [txt]);
 
-  useGSAP(() => {
-    gsap.from(group?.current?.rotation, {
-      y: Math.PI / 2,
-      duration: 1,
-      ease: 'power3.out',
-    });
+  useEffect(() => {
+    if (group.current) {
+      gsap.from(group.current.rotation, {
+        y: Math.PI / 2,
+        duration: 1,
+        ease: 'power3.out',
+      });
+    }
   }, [txt]);
 
   return (
