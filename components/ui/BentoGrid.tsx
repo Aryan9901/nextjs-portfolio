@@ -111,7 +111,8 @@ export const BentoGridItem = ({
 					<div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">{description}</div>
 					{/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
 					{/* remove mb-2 mt-2 */}
-					<div className={`font-sans text-lg leading-5 lg:text-3xl max-w-96 font-bold z-10`}>{title}</div>
+					{ id != 5 &&  <div className={`font-sans text-lg leading-5 lg:text-3xl max-w-96 font-bold z-10`}>{title}</div>}
+					{id==5 && <div className={`font-sans text-lg leading-5 lg:text-[22px] leading-7 max-w-[500px] font-bold z-10`}>{title}</div>}
 
 					{/* for the github 3d globe */}
 					{id === 2 && <GridGlobe />}
