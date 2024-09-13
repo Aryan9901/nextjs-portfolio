@@ -30,7 +30,7 @@ const Projects = () => {
   const currentProject = myProject[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="projects">
       <h1 className="heading">
 				A small selection of <span className="text-purple">recent projects</span>
 			</h1>

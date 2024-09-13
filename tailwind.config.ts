@@ -28,15 +28,19 @@ const config = {
     extend: {
       colors: {
         black: {
-          DEFAULT: "#000",
-          100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
-          300: "rgba(255, 255, 255, 0.125)",
+          DEFAULT: '#000',
+          100: '#010103',
+          200: '#0E0E10',
+          300: '#1C1C21',
+          500: '#3A3A49',
+          600: '#1A1A1A',
         },
         white: {
-          DEFAULT: "#FFF",
-          100: "#BEC1DD",
-          200: "#C1C2D3",
+          DEFAULT: '#FFFFFF',
+          800: '#E4E4E6',
+          700: '#D6D9E9',
+          600: '#AFB0B6',
+          500: '#62646C',
         },
         blue: {
           "100": "#E4ECFF",
@@ -75,6 +79,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+       backgroundImage: {
+        terminal: "url('/assets/terminal.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

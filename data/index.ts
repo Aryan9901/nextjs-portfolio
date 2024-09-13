@@ -311,27 +311,27 @@ export const myProject = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Node js',
+        path: 'assets/nodejs.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Redux Toolkit',
+        path: '/assets/redux.svg',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Json Web Token',
+        path: '/assets/jwt.svg',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: '3D portfolio Website',
+    desc: 'An immersive 3D portfolio showcasing my work as a web developer. The site leverages modern web technologies to deliver an interactive and visually stunning experience, reflecting my skills in design and development.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+      'Built using React.js, Three.js, Three-fiber & Framer Motion, this portfolio offers an engaging exploration of projects and experience. Users can seamlessly navigate through the 3D environment to learn more about my expertise.',
+    href: 'https://portfolio-3d-livid.vercel.app/',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
@@ -353,8 +353,8 @@ export const myProject = [
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Three js',
+        path: '/assets/threejs.png',
       },
       {
         id: 4,
@@ -364,11 +364,11 @@ export const myProject = [
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    title: 'PromptChat - AI Prompt Sharing App',
+    desc: 'Develop a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+      "Allow users to discover AI prompts shared by the community and create their own prompts to share with the world, edit their created prompts at any time and delete them when needed and Each user gets a dedicated profile page showcasing all the prompts they've created, providing an overview of their contributions",
+    href: 'https://promptchat-two.vercel.app/',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
     logoStyle: {
@@ -380,8 +380,8 @@ export const myProject = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Next.js',
+        path: '/assets/nextjs.png',
       },
       {
         id: 2,
